@@ -1,0 +1,21 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: devopsproject5-${LABEL_VERSION}
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: devopsproject5
+      version: ${LABEL_VERSION}
+  template:
+    metadata:
+      labels:
+        app: devopsproject5
+        version: ${LABEL_VERSION}
+    spec:
+      containers:
+      - name: devopsproject5
+        image: ${DOCKER_IMAGE}
+        ports:
+        - containerPort: 80
