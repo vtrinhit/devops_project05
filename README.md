@@ -1,5 +1,5 @@
 # udacity_devops_capstone
-#GET_PASSES_THIS_REPO_UDACITY_PLEASE
+https://github.com/vtrinhit/devops_project05/tree/main
 
 #######
 This app use:
